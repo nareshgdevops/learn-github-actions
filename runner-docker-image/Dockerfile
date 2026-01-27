@@ -1,4 +1,4 @@
-FROM            redhat/ubi9
+FROM            docker.io/redhat/ubi9
 RUN             useradd github
 USER            github
 WORKDIR         /home/github
