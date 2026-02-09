@@ -1,5 +1,5 @@
 FROM            docker.io/redhat/ubi9
-RUN             dnf install libicu -y
+RUN             dnf install libicu make -y
 RUN             useradd github
 USER            github
 WORKDIR         /home/github
