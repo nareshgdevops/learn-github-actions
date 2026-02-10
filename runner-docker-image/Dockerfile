@@ -1,5 +1,5 @@
 FROM            docker.io/redhat/ubi9
-RUN             dnf install libicu make git terraform -y
+RUN             dnf install libicu make terraform -y
 RUN             useradd github
 USER            github
 WORKDIR         /home/github
