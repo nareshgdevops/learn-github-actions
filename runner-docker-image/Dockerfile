@@ -1,6 +1,6 @@
 FROM            docker.io/redhat/ubi9
 RUN             curl -L -o /etc/yum.repos.d/hashi.repo https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo
-RUN             dnf install libicu make terraform azure-cli docker-ce-cli -y
+RUN             dnf install libicu make terraform azure-cli -y
 RUN             useradd github
 USER            github
 WORKDIR         /home/github
