@@ -1,0 +1,15 @@
+name: Dev - Apply
+on: [workflow_dispatch]
+jobs:
+  Build:
+    runs-on: self-hosted
+    steps:
+      - run: echo OK
+  DEV:
+    runs-on: self-hosted
+    steps:
+      - run: echo OK
+  TEST:
+    runs-on: self-hosted
+    steps:
+      - run: echo OK
