@@ -12,7 +12,7 @@ jobs:
       - run: echo OK
   TEST:
     runs-on: self-hosted
-    needs: TEST
+    needs: DEV
     steps:
       - run: echo OK
   DEV_DEPLOY:
