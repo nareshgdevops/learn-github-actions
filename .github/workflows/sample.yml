@@ -13,3 +13,19 @@ jobs:
     runs-on: self-hosted
     steps:
       - run: echo OK
+  DEV_DEPLOY:
+    runs-on: self-hosted
+    steps:
+      - run: echo OK
+  QA_DEPLOY:
+    runs-on: self-hosted
+    steps:
+      - run: echo OK
+  UAT_DEPLOY:
+    runs-on: self-hosted
+    steps:
+      - run: echo OK
+  PROD:
+    runs-on: self-hosted
+    steps:
+      - run: echo OK
