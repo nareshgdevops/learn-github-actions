@@ -2,7 +2,7 @@ name: CI - PR
 on:
   pull_request:
     branches:
-      'ROBO-**'
+      - 'ROBO-**'
 jobs:
   Build:
     runs-on: self-hosted
