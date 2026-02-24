@@ -1,4 +1,4 @@
-name: Dev - Apply
+name: CI - DEV
 on: [push, workflow_dispatch]
 jobs:
   Build:
@@ -8,34 +8,5 @@ jobs:
   DEV:
     runs-on: self-hosted
     needs: Build
-    steps:
-      - run: echo OK
-  TEST:
-    runs-on: self-hosted
-    needs: DEV
-    steps:
-      - run: echo OK
-  DEV_DEPLOY:
-    runs-on: self-hosted
-    environment: DEV
-    needs: TEST
-    steps:
-      - run: echo OK
-  QA_DEPLOY:
-    runs-on: self-hosted
-    needs: DEV_DEPLOY
-    environment: QA
-    steps:
-      - run: echo OK
-  UAT_DEPLOY:
-    runs-on: self-hosted
-    needs: QA_DEPLOY
-    environment: UAT
-    steps:
-      - run: echo OK
-  PROD:
-    runs-on: self-hosted
-    needs: UAT_DEPLOY
-    environment: PROD
     steps:
       - run: echo OK

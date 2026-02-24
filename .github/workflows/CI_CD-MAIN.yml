@@ -1,5 +1,5 @@
 name: CI/CD - MAIN
-on: [push, workflow_dispatch]
+on: [pull_request, workflow_dispatch]
 jobs:
   Build:
     runs-on: self-hosted
