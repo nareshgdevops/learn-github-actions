@@ -1,5 +1,8 @@
 name: CI - PR
-on: [push, workflow_dispatch]
+on:
+  pull_request:
+    branches:
+      'ROBO-**'
 jobs:
   Build:
     runs-on: self-hosted
