@@ -6,6 +6,4 @@ on:
       - 'main'
 jobs:
   Reuse:
-    runs-on: self-hosted
-    steps:
-      - uses: nareshgdevops/learn-github-actions/.github/workflows/CI-reusable.yml@main
+    uses: nareshgdevops/learn-github-actions/.github/workflows/CI-reusable.yml@main
