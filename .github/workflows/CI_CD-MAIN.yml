@@ -1,5 +1,5 @@
-name: Dev - Apply
-on: [workflow_dispatch]
+name: CI/CD - MAIN
+on: [push, workflow_dispatch]
 jobs:
   Build:
     runs-on: self-hosted
