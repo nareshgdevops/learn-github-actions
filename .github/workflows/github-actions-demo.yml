@@ -14,9 +14,12 @@ jobs:
       - run: echo "🖥️ The workflow is now ready to test your code on the runner."
       - name: List files in the repository
         run: |
-          ls ${{ github.workspace }}
+          touch new.txt
+          ls -l
       - run: echo "🍏 This job's status is ${{ job.status }}."
   TEST:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "🎉 Running on self hosted runner."
+      - name: List files in the repository
+        run: |
+          ls -l
