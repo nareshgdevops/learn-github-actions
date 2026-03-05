@@ -1,0 +1,8 @@
+name: CI/CD - MAIN
+on:
+  workflow_dispatch:
+jobs:
+  Build:
+    uses: nareshgdevops/roboshop-github-actions/.github/workflows/Test2.yml@main
+    secrets:
+      VAULT_TOKEN: ${{ secrets.VAULT_TOKEN }}

@@ -1,0 +1,15 @@
+name: CI Build
+on:
+  workflow_call:
+    secrets:
+      VAULT_TOKEN:
+        required: true
+jobs:
+  NodeJSBuild:
+    runs-on: self-hosted
+    steps:
+      - name: Use the secrets
+        run: |
+          echo "API Token available"
+          env:
+            VAULT_TOKEN: ${{ secrets.VAULT_TOKEN }}
