@@ -11,5 +11,4 @@ jobs:
       - name: Use the secrets
         run: |
           echo "API Token available"
-          env:
-            VAULT_TOKEN: ${{ secrets.VAULT_TOKEN }}
+          VAULT_TOKEN: ${{ secrets.VAULT_TOKEN }}
