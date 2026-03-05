@@ -1,4 +1,4 @@
-name: CI/CD - MAIN
+name: Test1
 on:
   workflow_dispatch
 jobs:
