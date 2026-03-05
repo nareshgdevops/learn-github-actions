@@ -1,0 +1,11 @@
+name: Test1
+on:
+  workflow_call:
+    secrets:
+      VAULT_TOKEN:
+        required: true
+jobs:
+  Build:
+    uses: nareshgdevops/learn-github-actions/.github/workflows/Test2.yml@main
+    secrets:
+      VAULT_TOKEN: ${{ secrets.VAULT_TOKEN }}
